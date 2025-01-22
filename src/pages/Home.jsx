@@ -1,12 +1,12 @@
 import CardList from "../ui/cards/CardList";
+export default function Home() {
 
-export default function Home(){
-    return(
+
+    return (
         <>
-        <main>
             <h3>Catálogo de Video Juegos</h3>
-            <CardList/>
-        </main>
+            <CardList />
+
         </>
     )
 }

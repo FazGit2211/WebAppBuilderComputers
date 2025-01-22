@@ -1,12 +1,12 @@
-export default function CardElement() {
+export default function CardElement({values}) {
     return (
         <>
             <div className="card">
                 <img src="..." className="card-img-top" alt="..."></img>
                     <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title">{values.name}</h5>
+                        <p className="card-text">{values.genred}</p>
+                        <p className="card-text"><small className="text-body-secondary">{values.year}</small></p>
                     </div>
             </div>
         </>
